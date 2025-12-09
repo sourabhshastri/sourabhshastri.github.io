@@ -226,6 +226,30 @@
       box-shadow: 0 4px 10px rgba(37,99,235,0.2);
     }
 
+    .primary-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: none;
+      background: var(--accent);
+      color: #f9fafb;
+      font-size: 0.9rem;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(37,99,235,0.35);
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+
+    .primary-btn:hover {
+      background: #1d4ed8;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(37,99,235,0.5);
+    }
+
+    .primary-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 12px rgba(37,99,235,0.35);
+    }
+
     footer {
       text-align: center;
       font-size: 0.8rem;
@@ -359,16 +383,28 @@
     </ul>
   </section>
 
-  <!-- Projects & Patents – UNDER CONSTRUCTION with animated cartoon GIF -->
+  <!-- Projects & Patents -->
   <section id="projects" class="card">
     <h3>Projects &amp; Patents</h3>
 
+    <!-- Mini Projects subsection with button -->
+    <div style="margin-bottom:20px;">
+      <p class="item-title" style="margin-bottom:8px;">Mini Projects</p>
+      <button
+        class="primary-btn"
+        onclick="window.open('https://student-grading-prediction.streamlit.app/', '_blank');"
+      >
+        Student Grade Prediction Tool
+      </button>
+    </div>
+
+    <!-- Under construction content -->
     <div style="text-align:center; padding:32px 16px;">
       <p style="font-size:1.1rem; color:#6b7280; margin-bottom:16px;">
         🚧 Under construction... 🚧
       </p>
 
-      <!-- Cartoon-style animated GIF (you can swap URL with any other you like) -->
+      <!-- Cartoon-style animated GIF -->
       <img
         src="https://media.giphy.com/media/3o6fJ7z5r7a5L0UQzm/giphy.gif"
         alt="Animated cartoon under construction"
@@ -376,7 +412,7 @@
       />
 
       <p style="font-size:0.9rem; color:#9ca3af; margin-top:12px;">
-        This section will be updated soon with details of projects and patents.
+        This section will be updated soon with more details of projects and patents.
       </p>
     </div>
   </section>
