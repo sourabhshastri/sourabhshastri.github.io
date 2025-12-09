@@ -4,43 +4,53 @@
   <meta charset="UTF-8" />
   <title>Dr. Sourabh Shastri – Academic Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <style>
     :root {
       --bg: #f3f4f6;
-      --bg-card: #ffffff;
-      --text-main: #111827;
-      --text-muted: #6b7280;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
       --accent: #2563eb;
       --border: #e5e7eb;
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: var(--bg);
-      color: var(--text-main);
+      color: var(--text);
       line-height: 1.6;
     }
+
     header {
       background: linear-gradient(135deg, #111827, #1f2937);
       color: #f9fafb;
-      padding: 32px 16px 24px;
+      padding: 36px 16px 28px;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 2rem;
     }
+
     header h2 {
       margin: 8px 0 4px;
-      font-weight: 500;
       font-size: 1.1rem;
+      font-weight: 500;
     }
+
     header p {
       margin: 4px 0;
       font-size: 0.95rem;
       opacity: 0.9;
     }
+
     nav {
       background: #111827;
       display: flex;
@@ -52,377 +62,261 @@
       top: 0;
       z-index: 10;
     }
+
     nav a {
       color: #e5e7eb;
       text-decoration: none;
       font-size: 0.9rem;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     .container {
       max-width: 1100px;
       margin: 0 auto;
       padding: 16px;
     }
+
     .card {
-      background: var(--bg-card);
+      background: var(--card);
+      border: 1px solid var(--border);
       border-radius: 12px;
       padding: 20px;
       margin-bottom: 20px;
-      border: 1px solid var(--border);
       box-shadow: 0 1px 2px rgba(0,0,0,0.03);
     }
+
     section h3 {
       margin-top: 0;
       font-size: 1.25rem;
       border-left: 4px solid var(--accent);
       padding-left: 8px;
     }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
     .two-col {
       display: grid;
       grid-template-columns: 1.2fr 1fr;
       gap: 16px;
     }
+
     @media (max-width: 768px) {
-      .two-col { grid-template-columns: 1fr; }
+      .two-col {
+        grid-template-columns: 1fr;
+      }
     }
-    .muted { color: var(--text-muted); font-size: 0.9rem; }
-    ul { padding-left: 20px; margin-top: 6px; margin-bottom: 6px; }
-    li { margin-bottom: 4px; }
+
+    ul {
+      padding-left: 20px;
+      margin: 6px 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
     .tag-list {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
       margin-top: 8px;
     }
+
     .tag {
       background: #e5e7eb;
       border-radius: 999px;
-      padding: 2px 10px;
+      padding: 3px 10px;
       font-size: 0.8rem;
     }
+
     .item-title {
       font-weight: 600;
     }
+
     .item-meta {
       font-size: 0.9rem;
-      color: var(--text-muted);
+      color: var(--muted);
     }
-    .contact-links a {
-      margin-right: 12px;
-      font-size: 0.9rem;
-      color: var(--accent);
-      text-decoration: none;
-    }
-    .contact-links a:hover {
-      text-decoration: underline;
-    }
+
     footer {
       text-align: center;
       font-size: 0.8rem;
-      color: var(--text-muted);
+      color: var(--muted);
       padding: 16px;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>Dr. Sourabh Shastri</h1>
-    <h2>Assistant Professor, Department of Computer Science & IT</h2>
-    <p>Kathua Campus, University of Jammu, J&amp;K, India</p>
-    <p class="muted">
-      E-mail: <a href="mailto:sourabhshastri@jammuuniversity.ac.in" style="color:#93c5fd;">sourabhshastri@jammuuniversity.ac.in</a> |
-      Mobile: +91-9419171476
+
+<header>
+  <h1>Dr. Sourabh Shastri</h1>
+  <h2>Assistant Professor, Department of Computer Science & IT</h2>
+  <p>Kathua Campus, University of Jammu, J&K, India</p>
+  <p class="muted">
+    Email:
+    <a href="mailto:sourabhshastri@jammuuniversity.ac.in" style="color:#93c5fd;">
+      sourabhshastri@jammuuniversity.ac.in
+    </a>
+    &nbsp;|&nbsp; Mobile: +91-9419171476
+  </p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#positions">Positions</a>
+  <a href="#publications">Publications</a>
+  <a href="#projects">Projects & Patents</a>
+  <a href="#talks">Talks</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+  <!-- About -->
+  <section id="about" class="card">
+    <h3>About</h3>
+    <div class="two-col">
+      <div>
+        <p>
+          I am an Assistant Professor in the Department of Computer Science & IT,
+          Kathua Campus, University of Jammu. My teaching and research interests
+          span Artificial Intelligence, Machine Learning, Deep Learning,
+          Healthcare Analytics, Medical Imaging, and Data Mining.
+        </p>
+        <p>
+          My Ph.D. research focused on knowledge discovery in large-scale maternal
+          health and child immunization databases using advanced data mining and
+          ensemble learning approaches.
+        </p>
+      </div>
+      <div>
+        <p class="item-title">Academic Qualifications</p>
+        <ul>
+          <li>Ph.D. (Computer Science), University of Jammu</li>
+          <li>MCA, University of Jammu</li>
+          <li>BCA, University of Jammu</li>
+        </ul>
+
+        <p class="item-title">Eligibility Tests</p>
+        <ul>
+          <li>UGC-NET (Computer Science)</li>
+          <li>State Eligibility Test (J&K)</li>
+          <li>JKPSC 10+2 Lecturer (Qualified)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="research" class="card">
+    <h3>Research Interests</h3>
+    <div class="tag-list">
+      <span class="tag">Artificial Intelligence</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Deep Learning</span>
+      <span class="tag">Medical Imaging</span>
+      <span class="tag">Healthcare Analytics</span>
+      <span class="tag">Time Series Forecasting</span>
+      <span class="tag">Data Mining</span>
+      <span class="tag">IoT</span>
+    </div>
+  </section>
+
+  <!-- Positions -->
+  <section id="positions" class="card">
+    <h3>Academic Positions</h3>
+    <ul>
+      <li>
+        <span class="item-title">Assistant Professor</span>,
+        University of Jammu
+        <span class="item-meta">(2017 – Present)</span>
+      </li>
+      <li>
+        <span class="item-title">Assistant Professor</span>,
+        Bhaderwah Campus
+        <span class="item-meta">(2012 – 2017)</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="card">
+    <h3>Selected Publications</h3>
+    <ul>
+      <li>
+        <span class="item-title">Neuro_DeFused-Net: Diagnostic model for Parkinson’s disease</span><br>
+        <span class="item-meta">Computers in Biology and Medicine, 2025</span>
+      </li>
+      <li>
+        <span class="item-title">Adaptive ECG-based myocardial infarction detection</span><br>
+        <span class="item-meta">Neural Computing and Applications, 2025</span>
+      </li>
+      <li>
+        <span class="item-title">Time series forecasting of COVID-19</span><br>
+        <span class="item-meta">Chaos, Solitons & Fractals, 2020</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Projects & Patents – UNDER CONSTRUCTION -->
+  <section id="projects" class="card">
+    <h3>Projects & Patents</h3>
+
+    <div style="text-align:center; padding:32px 16px;">
+      <p style="font-size:1.1rem; color:#6b7280; margin-bottom:16px;">
+        🚧 Under construction... 🚧
+      </p>
+
+      <img
+        src="https://media.giphy.com/media/TilmLMmWrRYYHjLfub/giphy.gif"
+        alt="Under construction"
+        style="max-width:300px; width:100%; border-radius:12px;"
+      />
+
+      <p style="font-size:0.9rem; color:#9ca3af; margin-top:12px;">
+        This section will be updated soon.
+      </p>
+    </div>
+  </section>
+
+  <!-- Talks -->
+  <section id="talks" class="card">
+    <h3>Invited Talks</h3>
+    <ul>
+      <li>AI and ICT in Teaching & Learning – FDP, 2025</li>
+      <li>Deep Learning in Medical Imaging – ABES Engineering College, 2023</li>
+      <li>Machine Learning for COVID-19 – MIET, 2022</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="card">
+    <h3>Contact & Research IDs</h3>
+    <p>
+      <b>Email:</b> sourabhshastri@jammuuniversity.ac.in<br>
+      <b>ORCID:</b> 0000-0001-6373-398X<br>
+      <b>Scopus ID:</b> 57208925729<br>
+      <b>Web of Science:</b> AAX-4046-2020
     </p>
-  </header>
+  </section>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research Interests</a>
-    <a href="#positions">Academic Positions</a>
-    <a href="#publications">Selected Publications</a>
-    <a href="#projects">Projects &amp; Patents</a>
-    <a href="#talks">Invited Talks</a>
-    <a href="#activities">Academic &amp; Outreach</a>
-    <a href="#contact">Contact &amp; IDs</a>
-  </nav>
+</div>
 
-  <div class="container">
+<footer>
+  © <span id="year"></span> Dr. Sourabh Shastri · GitHub Pages
+</footer>
 
-    <!-- About -->
-    <section id="about" class="card">
-      <h3>About</h3>
-      <div class="two-col">
-        <div>
-          <p>
-            I am currently serving as an Assistant Professor in the Department of Computer Science &amp; IT,
-            Kathua Campus, University of Jammu. My teaching and research focus on Artificial Intelligence,
-            Machine Learning, Data Mining, Time Series Forecasting, Healthcare Analytics, Medical Imaging,
-            and ICT-enabled education.
-          </p>
-          <p>
-            My doctoral work, titled <em>“Knowledge Discovery in Maternal Health and Child Immunization Databases”</em>,
-            explored data mining and ensemble learning approaches for maternal and child health decision support.
-          </p>
-          <p>
-            Over the years, I have contributed extensively to research in public healthcare analytics,
-            COVID-19 time series forecasting, deep learning for medical imaging, and ensemble methods for disease
-            diagnosis and prediction, along with active involvement in academic administration, outreach, and
-            capacity building programmes.
-          </p>
-        </div>
-        <div>
-          <p><span class="item-title">Academic Qualifications</span></p>
-          <ul>
-            <li><b>Ph.D.</b>, Computer Science – University of Jammu (2021)</li>
-            <li><b>MCA</b> – University of Jammu (2008)</li>
-            <li><b>BCA</b> – University of Jammu (2005)</li>
-          </ul>
-          <p class="item-title">Eligibility Tests</p>
-          <ul>
-            <li>UGC-NET (Computer Science)</li>
-            <li>State Eligibility Test – University of Jammu, University of Kashmir</li>
-            <li>JKPSC 10+2 Lecturer (Qualified)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-    <!-- Research Interests -->
-    <section id="research" class="card">
-      <h3>Research Interests</h3>
-      <p class="muted">Key areas of interest and ongoing work</p>
-      <div class="tag-list">
-        <span class="tag">Artificial Intelligence</span>
-        <span class="tag">Machine Learning</span>
-        <span class="tag">Deep Learning</span>
-        <span class="tag">Medical Imaging</span>
-        <span class="tag">Healthcare Analytics</span>
-        <span class="tag">Time Series Forecasting</span>
-        <span class="tag">Data Mining &amp; KDD</span>
-        <span class="tag">Ensemble Learning</span>
-        <span class="tag">IoT &amp; Smart Systems</span>
-        <span class="tag">Education Technology</span>
-      </div>
-    </section>
-
-    <!-- Positions -->
-    <section id="positions" class="card">
-      <h3>Academic Positions</h3>
-      <ul>
-        <li>
-          <span class="item-title">Assistant Professor</span>,
-          Department of Computer Science &amp; IT, Kathua Campus, University of Jammu
-          <span class="item-meta">(Feb 2017 – Present)</span>
-        </li>
-        <li>
-          <span class="item-title">Assistant Professor</span>,
-          Department of Computer Science &amp; IT, Bhaderwah Campus, University of Jammu
-          <span class="item-meta">(Aug 2012 – Feb 2017)</span>
-        </li>
-        <li>
-          <span class="item-title">Lecturer</span>, Department of School Education, J&amp;K
-          <span class="item-meta">(2012)</span>
-        </li>
-        <li>
-          <span class="item-title">Lecturer (Contractual)</span>, Multiple institutions affiliated to University of Jammu
-          <span class="item-meta">(2008 – 2011)</span>
-        </li>
-      </ul>
-
-      <p class="item-title" style="margin-top:12px;">Administrative Roles</p>
-      <ul>
-        <li>In-charge Head, Department of Computer Science &amp; IT, Kathua Campus (2017–2018; 2019–present)</li>
-        <li>In-charge Coordinator, University Institute of Engineering and Technology (UIET), Kathua Campus (current &amp; previous terms)</li>
-        <li>NSS Programme Officer, NSS Campus Unit-VI, Kathua Campus (from 2025)</li>
-        <li>Convener / Member of various academic, purchase, and admission committees at University of Jammu</li>
-      </ul>
-    </section>
-
-    <!-- Selected Publications -->
-    <section id="publications" class="card">
-      <h3>Selected Publications</h3>
-      <p class="muted">
-        A subset of recent and representative works is listed below.
-        For the complete publication list, please refer to my detailed CV or indexing profiles.
-      </p>
-      <ul>
-        <li>
-          <span class="item-title">
-            Neuro_DeFused-Net: A novel multi-scale 2D-CNN architecture assisted diagnostic model for Parkinson's disease
-          </span><br />
-          <span class="item-meta">
-            Computers in Biology and Medicine, 2025 (SCIE, Scopus)
-          </span>
-        </li>
-        <li>
-          <span class="item-title">
-            Adaptive filter-enabled electrocardiogram signals-based myocardial infarction detection using CNN ensemble model
-          </span><br />
-          <span class="item-meta">
-            Neural Computing and Applications, 2025 (Scopus)
-          </span>
-        </li>
-        <li>
-          <span class="item-title">
-            Advancing crop recommendation system with supervised machine learning and explainable AI
-          </span><br />
-          <span class="item-meta">
-            Scientific Reports, 2025 (SCIE, Scopus)
-          </span>
-        </li>
-        <li>
-          <span class="item-title">
-            Time Series Forecasting of Covid-19 using Deep Learning Models: India–USA Comparative Case Study
-          </span><br />
-          <span class="item-meta">
-            Chaos, Solitons &amp; Fractals, 2020 (Elsevier)
-          </span>
-        </li>
-        <li>
-          <span class="item-title">
-            CheXImageNet: a novel architecture for accurate classification of Covid-19 with chest X-ray digital images
-          </span><br />
-          <span class="item-meta">
-            Health and Technology, 2022 (Springer)
-          </span>
-        </li>
-        <li>
-          <span class="item-title">
-            LiteCovidNet: A lightweight deep neural model for detection of Covid-19 using X-ray images
-          </span><br />
-          <span class="item-meta">
-            International Journal of Imaging Systems and Technology, 2022 (Wiley)
-          </span>
-        </li>
-        <li>
-          <span class="item-title">
-            BC-NET: Early Diagnostics of Breast Cancer using Nested Ensemble Technique of Machine Learning
-          </span><br />
-          <span class="item-meta">
-            Automatic Control and Computer Sciences, 2023 (Springer)
-          </span>
-        </li>
-      </ul>
-      <p class="muted">
-        <!-- You can extend this list by copying the pattern above
-             and pasting the remaining publications from your CV. -->
-      </p>
-    </section>
-
-    <!-- Projects & Patents -->
-    <section id="projects" class="card">
-      <h3>Research Projects &amp; Patents</h3>
-      <p class="item-title">Research Projects</p>
-      <ul>
-        <li>
-          <span class="item-title">H2 (Home and Health) Protection System using IoT, Deep Learning, and Computer Vision</span><br />
-          <span class="item-meta">Principal Investigator, Research &amp; Seed Grant, University of Jammu, ₹ 2,00,000</span>
-        </li>
-        <li>
-          <span class="item-title">
-            The Socio-economic drivers of willingness to use PV Solar Panels among rural residents of Jammu and Kashmir:
-            A Statistical and Machine Learning Approach
-          </span><br />
-          <span class="item-meta">
-            Project Director, ICSSR funded project (~₹ 8.30 Lakhs)
-          </span>
-        </li>
-      </ul>
-
-      <p class="item-title" style="margin-top:12px;">Patents (Selected)</p>
-      <ul>
-        <li>A Wireless Interactive IoT Service Robot for Smart Home – Published by IP India</li>
-        <li>Hybrid Drone for Smart Logistics using IoT – Published by IP India</li>
-        <li>E-commerce Sales Prediction and Boosting using Machine Learning – Granted by IP Australia</li>
-        <li>Smart Logistics Transportation using Blockchain Technology – Granted by IP Australia</li>
-        <li>Deep Learning based Semantic Model for generating Personalized Recommendations – Published by IP India</li>
-        <li>Covid-19 detection using CTX-CoviNet – Published by IP India</li>
-      </ul>
-    </section>
-
-    <!-- Invited Talks -->
-    <section id="talks" class="card">
-      <h3>Invited Talks (Recent Highlights)</h3>
-      <ul>
-        <li>
-          <span class="item-title">
-            The Future of Education: AI and ICT in Teaching and Learning
-          </span><br />
-          <span class="item-meta">
-            FDP on Use of AI and ICT Tools in Teaching-Learning Process, Government Degree College Women, Kathua, 2025
-          </span>
-        </li>
-        <li>
-          <span class="item-title">
-            Overview of Deep Learning in Medical Imaging
-          </span><br />
-          <span class="item-meta">
-            Online Skill Enhancement Programme, ABES Engineering College, Ghaziabad, 2023
-          </span>
-        </li>
-        <li>
-          <span class="item-title">
-            Machine Learning and its bit part in combating COVID-19
-          </span><br />
-          <span class="item-meta">
-            Model Institute of Engineering and Technology (Autonomous), 2022
-          </span>
-        </li>
-        <li>
-          <span class="item-title">
-            From John von Neumann’s Ideas to Learning of Machines
-          </span><br />
-          <span class="item-meta">
-            Girdari Lal Dogra Memorial Degree College, Hiranagar, 2022
-          </span>
-        </li>
-      </ul>
-      <p class="muted">
-        Numerous additional expert talks, FDP sessions, and workshops delivered on Data Mining, Machine Learning,
-        Deep Learning, Cyber Security, and ICT for education.
-      </p>
-    </section>
-
-    <!-- Academic & Outreach -->
-    <section id="activities" class="card">
-      <h3>Academic, Outreach &amp; Leadership Activities</h3>
-      <ul>
-        <li>Organized multiple national and international conferences, seminars, webinars, and FDPs in Computer Science &amp; IT.</li>
-        <li>Coordinated industrial webinars, placement drives, and expert lecture series with industry and academic partners.</li>
-        <li>Led numerous sports, yoga, environmental, and social awareness initiatives for students and local communities.</li>
-        <li>Active involvement in NSS, extension outreach programmes, and community engagement activities.</li>
-        <li>Served as reviewer for reputed journals including Computers in Biology and Medicine, IETE Journal of Research, and others.</li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="card">
-      <h3>Contact &amp; Research IDs</h3>
-      <p>
-        <b>E-mail:</b> <a href="mailto:sourabhshastri@jammuuniversity.ac.in">sourabhshastri@jammuuniversity.ac.in</a><br />
-        <b>Address:</b> Kathua Campus, University of Jammu, J&amp;K, India
-      </p>
-      <p class="item-title">Research Profiles</p>
-      <ul>
-        <li><b>ORCID:</b> <a href="https://orcid.org/0000-0001-6373-398X" target="_blank">0000-0001-6373-398X</a></li>
-        <li><b>Scopus Author ID:</b> 57208925729</li>
-        <li><b>Web of Science ResearcherID:</b> AAX-4046-2020</li>
-        <li><b>Google Scholar:</b> (add your profile link here)</li>
-      </ul>
-      <p class="muted">
-        You may also include links to GitHub, LinkedIn, ResearchGate, and other professional profiles here.
-      </p>
-    </section>
-  </div>
-
-  <footer>
-    © <span id="year"></span> Dr. Sourabh Shastri · Powered by GitHub Pages
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
